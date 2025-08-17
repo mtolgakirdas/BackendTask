@@ -68,14 +68,13 @@ namespace ProductApi.Application.Services
 
         public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
         {
-            var values = new Product
-            {
-                ProductId = updateProductDto.ProductId,
-                Name = updateProductDto.Name,
-                Description = updateProductDto.Description,
-                Price = updateProductDto.Price,
-                Stock = updateProductDto.Stock
-            };
+            var values = await _productRepository.GetByIdAsync(updateProductDto.ProductId);
+
+            values.Name = updateProductDto.Name;
+            values.Description = updateProductDto.Description;
+            values.Price = updateProductDto.Price;
+            values.Stock = updateProductDto.Stock;
+
             await _productRepository.UpdateAsync(values);
         }
     }

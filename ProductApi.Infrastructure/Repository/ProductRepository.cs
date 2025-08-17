@@ -48,7 +48,6 @@ namespace ProductApi.Infrastructure.Repository
 
         public async Task UpdateAsync(Product product)
         {
-            _context.Products.Update(product);
             await _context.SaveChangesAsync();
         }
     }
