@@ -1,3 +1,4 @@
+using ProductApi.API.Exceptions;
 using ProductApi.Application.Interfaces;
 using ProductApi.Application.Services;
 using ProductApi.Infrastructure.Context;
@@ -24,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<GlobalExceptionMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
