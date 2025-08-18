@@ -31,4 +31,16 @@
 ## 🔧 Veritabanı Bağlantısı
 Bu projede connection string doğrudan `ProductContext` içerisine yazılmıştır.  
 
+---
+## ✔️Repoyu indirin
+**git clone https://github.com/mtolgakirdas/BackendTask.git**
+
+`ProductContext'te bulunan connection stringi kendinize göre düzenleyin Server=....`
+
+---
+## Kurulum
+**Projedeki gerekli nuget packetlerini yükleyiniz(EntityFramework araçları)**
+**Add-migration ile migration oluşturun**
+**update-database ile code first yaklaşımı ile veritabanı oluşturun**
+**Projeyi başlatın ve Swagger aracı ile test edin.**
 
