@@ -39,8 +39,11 @@ Bu projede connection string doğrudan `ProductContext` içerisine yazılmışt�
 
 ---
 ## Kurulum
-**Projedeki gerekli nuget packetlerini yükleyiniz(EntityFramework araçları)**
-**Add-migration ile migration oluşturun**
-**update-database ile code first yaklaşımı ile veritabanı oluşturun**
-**Projeyi başlatın ve Swagger aracı ile test edin.**
+-- **Projedeki gerekli nuget packetlerini yükleyiniz(EntityFramework araçları)**
+
+-- **Add-migration ile migration oluşturun**
+
+-- **update-database ile code first yaklaşımı ile veritabanı oluşturun**
+
+-- **Projeyi başlatın ve Swagger aracı ile test edin.**
 
